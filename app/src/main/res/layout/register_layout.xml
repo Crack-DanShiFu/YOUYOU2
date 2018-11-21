@@ -42,6 +42,7 @@
             android:background="@drawable/shape"
             android:drawableLeft="@drawable/user"
             android:hint="账号/邮箱/手机号"
+            android:inputType="textEmailAddress"
             android:maxLength="15"
             android:textSize="15dp"/>
 
@@ -53,7 +54,20 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/shape"
             android:drawableLeft="@drawable/pwd"
+            android:inputType="textPassword"
             android:hint="密码"
+            android:maxLength="15"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/repasswdText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/passwdText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/pwd"
+            android:hint="重复密码"
             android:maxLength="15"
             android:textSize="15dp"/>
         <Button
@@ -61,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/registered"
-            android:layout_below="@+id/passwdText"
+            android:layout_below="@+id/repasswdText"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_shape"
             android:clickable="true"
@@ -140,6 +154,7 @@
             android:textColor="@color/colorLinkBlue"/>
 
     </RelativeLayout>
+
 
 
 </RelativeLayout>

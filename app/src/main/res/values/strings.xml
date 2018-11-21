@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">YOUYOU</string>
-    <string name="register_text">or register with</string>
+    <string name="register_text">or Sign with</string>
     <string name="donot_have_account_text">Do not have an account ?</string>
     <string name="create_account_text">Create or</string>
     <string name="success">Success !</string>

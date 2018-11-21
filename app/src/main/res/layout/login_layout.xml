@@ -41,6 +41,7 @@
             android:background="@drawable/shape"
             android:drawableLeft="@drawable/user"
             android:hint="账号/邮箱/手机号"
+            android:inputType="textEmailAddress"
             android:maxLength="15"
             android:textSize="15dp"/>
 
@@ -52,6 +53,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/shape"
             android:drawableLeft="@drawable/pwd"
+            android:inputType="textPassword"
             android:hint="密码"
             android:maxLength="15"
             android:textSize="15dp"/>
