@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorLoginBtn">#3a459c</color>
+    <color name="colorFontgray">#666666</color>
+    <color name="colorFontWhite">#ffffff</color>
+
+    <color name="colorLoginBgColor">#fc4365</color>
+    <color name="colorLoginBgColorWhite">#ffffff</color>
+    <color name="colorLinkBlue">#3a429a</color>
+
+
+
+
+</resources>

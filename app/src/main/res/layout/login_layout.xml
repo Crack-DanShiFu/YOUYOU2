@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLoginBgColorWhite">
+
+    <RelativeLayout
+        android:id="@+id/dengluText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="86dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="登陆"
+            android:textSize="30dp"
+            android:textColor="@color/colorFontgray"
+          />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dengluEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dengluText"
+        android:layout_marginTop="60dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+      >
+
+        <EditText
+            android:id="@+id/userNameText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/user"
+            android:hint="账号/邮箱/手机号"
+            android:maxLength="15"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/passwdText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/userNameText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/pwd"
+            android:hint="密码"
+            android:maxLength="15"
+            android:textSize="15dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="登陆"
+            android:layout_below="@+id/passwdText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:textColor="@color/colorFontWhite"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/regText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dengluEdit"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_text"
+            android:textColor="@color/colorFontgray"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/regIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/regText"
+        android:layout_marginTop="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twiter"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/other"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regIcon"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+        <TextView
+            android:id="@+id/donot_have_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donot_have_account_text"
+            android:textColor="@color/colorFontgray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/donot_have_account_text"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="194dp"
+            android:text="@string/create_account_text"
+            android:textColor="@color/colorLinkBlue"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
