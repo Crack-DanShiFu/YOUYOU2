@@ -5,7 +5,7 @@
     android:background="@color/colorLoginBgColorWhite">
 
     <RelativeLayout
-        android:id="@+id/dengluText"
+        android:id="@+id/registered_text_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -15,24 +15,25 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/registered_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/landing"
+            android:text="@string/registered"
             android:textSize="30dp"
             android:textColor="@color/colorFontgray"
-          />
+            />
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/dengluEdit"
+        android:id="@+id/registered_panel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/dengluText"
+        android:layout_below="@+id/registered_text_panel"
         android:layout_marginTop="60dp"
         android:paddingRight="40dp"
         android:paddingLeft="40dp"
-      >
+        >
 
         <EditText
             android:id="@+id/userNameText"
@@ -56,9 +57,10 @@
             android:maxLength="15"
             android:textSize="15dp"/>
         <Button
+            android:id="@+id/registered_btn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/landing"
+            android:text="@string/registered"
             android:layout_below="@+id/passwdText"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_shape"
@@ -69,10 +71,10 @@
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/regText"
+        android:id="@+id/regText_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/dengluEdit"
+        android:layout_below="@+id/registered_panel"
         android:layout_marginTop="30dp">
         <TextView
             android:layout_width="wrap_content"
@@ -84,12 +86,12 @@
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/regIcon"
+        android:id="@+id/regIcon_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_below="@+id/regText"
+        android:layout_below="@+id/regText_panel"
         android:layout_marginTop="30dp"
         >
         <LinearLayout
@@ -113,26 +115,28 @@
         </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
+        android:id="@+id/Already_have_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/regIcon"
+        android:layout_below="@+id/regIcon_panel"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="70dp"
         android:layout_marginRight="50dp">
         <TextView
-            android:id="@+id/donot_have_account_text"
+            android:id="@+id/Already_have_account_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donot_have_account_text"
+            android:text="@string/Already_have"
             android:textColor="@color/colorFontgray"/>
 
         <TextView
+            android:id="@+id/Sing_in_Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/donot_have_account_text"
+            android:layout_alignLeft="@+id/Already_have_account_text"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="194dp"
-            android:text="@string/create_account_text"
+            android:text="@string/Sing_in"
             android:textColor="@color/colorLinkBlue"/>
 
     </RelativeLayout>

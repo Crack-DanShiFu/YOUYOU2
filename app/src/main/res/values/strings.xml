@@ -3,5 +3,12 @@
     <string name="register_text">or register with</string>
     <string name="donot_have_account_text">Do not have an account ?</string>
     <string name="create_account_text">Create or</string>
+    <string name="success">Success !</string>
+    <string name="account_has_been">You account has been created. 30 days left of your free trial !</string>
+    <string name="landing">登陆</string>
+    <string name="registered">注册</string>
+    <string name="Already_have">Already have an account ?</string>
+    <string name="Sing_in">Sign in </string>
+
 
 </resources>
