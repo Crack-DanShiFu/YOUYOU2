@@ -35,7 +35,7 @@
       >
 
         <EditText
-            android:id="@+id/userNameText"
+            android:id="@+id/loginUserNameText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/shape"
@@ -46,10 +46,10 @@
             android:textSize="15dp"/>
 
         <EditText
-            android:id="@+id/passwdText"
+            android:id="@+id/loginPasswdText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/userNameText"
+            android:layout_below="@+id/loginUserNameText"
             android:layout_marginTop="20dp"
             android:background="@drawable/shape"
             android:drawableLeft="@drawable/pwd"
@@ -58,10 +58,11 @@
             android:maxLength="15"
             android:textSize="15dp"/>
         <Button
+            android:id="@+id/loginSubmitBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/landing"
-            android:layout_below="@+id/passwdText"
+            android:layout_below="@+id/loginPasswdText"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_shape"
             android:clickable="true"
@@ -129,8 +130,10 @@
             android:textColor="@color/colorFontgray"/>
 
         <TextView
+            android:id="@+id/create_or"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:layout_alignLeft="@+id/donot_have_account_text"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="194dp"

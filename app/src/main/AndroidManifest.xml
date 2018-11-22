@@ -19,6 +19,7 @@
         <activity android:name=".activity.Login_Activity"></activity>
         <activity android:name=".activity.MainPage_Activity"></activity>
         <activity android:name=".activity.RegisterSuccess_Activity"></activity>
+        <activity android:name=".activity.Register_Activity"></activity>
     </application>
 
 </manifest>
