@@ -30,7 +30,7 @@ public class Jump extends AppCompatActivity {
     public void check_Login_status(){
         Boolean isLogin = sharedPreferences.getBoolean("isLogin",false);
 
-        if(false){
+        if(true){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
