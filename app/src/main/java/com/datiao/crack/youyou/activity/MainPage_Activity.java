@@ -11,6 +11,7 @@ import com.datiao.crack.youyou.component.BottomBar;
 import com.datiao.crack.youyou.fragment.Fragment1;
 import com.datiao.crack.youyou.fragment.Fragment2;
 import com.datiao.crack.youyou.fragment.Fragment3;
+import com.datiao.crack.youyou.fragment.Fragment4;
 
 public class MainPage_Activity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
@@ -19,6 +20,7 @@ public class MainPage_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.main_page_layout);
+
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottom_bar);
         bottomBar.setContainer(R.id.fl_container)
                 .setTitleBeforeAndAfterColor("#999999", "#3a429a")
@@ -34,7 +36,7 @@ public class MainPage_Activity extends AppCompatActivity {
                         "商城",
                         R.drawable.item3_gray,
                         R.drawable.item3_blue)
-                .addItem(Fragment3.class,
+                .addItem(Fragment4.class,
                         "健康贴士",
                         R.drawable.item4_gray,
                         R.drawable.item4_blue)
