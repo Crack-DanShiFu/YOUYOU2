@@ -1,14 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="800dp"
+    android:layout_height="match_parent"
+    android:background="@color/spaceTabblue"
+    android:id="@+id/fragment1_layout"
     >
-
-<TextView
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="121212"
-    android:background="@color/colorAccent"
-    />
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/zhuye_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="呦呦健康"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorFontWhite"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+        <ImageView
+            android:id="@+id/more_personal_information"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+
+            android:src="@drawable/ic_more"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_small_label">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="60dp">
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:id="@+id/new_plan"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/jia"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="新建"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="健康计划"
+                        android:gravity="center"
+                        android:textSize="12.5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/See_the_history"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/fangdajing"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="查看"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="历史记录"
+                        android:gravity="center"
+                        android:textSize="12.5dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/daoru"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="加入"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="健康计划"
+                        android:gravity="center"
+                        android:textSize="12.5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/share"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="分享"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="历史记录"
+                        android:gravity="center"
+                        android:textSize="12.5dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>

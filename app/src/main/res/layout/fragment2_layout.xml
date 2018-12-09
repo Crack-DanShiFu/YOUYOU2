@@ -1,10 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment2_shape"
 
-    <TextView
+    >
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="fngdkj"/>
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/colorLinkBlue"
+                android:text="今日记录"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:background="@color/transparent">
+
+            <ListView
+                android:id="@+id/today_record_ListView"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:divider="#00000000">
+
+            </ListView>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:tag="实线"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/line_solid" />
+
+        <LinearLayout
+            android:id="@+id/history_linear"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/item_shape"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/lishi"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史记录"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

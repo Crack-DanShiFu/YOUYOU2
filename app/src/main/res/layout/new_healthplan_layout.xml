@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@color/spaceTabblue"
+        >
+        <ImageView
+            android:id="@+id/new_plan_return"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_return"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新的健康计划"
+                android:textColor="@color/colorFontWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/new_plan_import"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_import"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:focusable="true"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

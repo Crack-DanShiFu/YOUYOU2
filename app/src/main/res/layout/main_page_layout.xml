@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_page_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorLinkBlue">
-    <FrameLayout
-        android:id="@+id/fl_container"
+    android:background="@color/spaceTabblue">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-       >
+        android:layout_marginBottom="58dp"
+        />
 
-    </FrameLayout>
+    <com.datiao.crack.youyou.spacetablayout.SpaceTabLayout
+        android:id="@+id/spaceTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.datiao.crack.youyou.spacetablayout.SpaceTabLayoutBehavior"
+        app:number_of_tabs="four"
+        app:starting_position="one"
+        app:tab_color="@color/spaceTabblue"
+        app:button_color="@color/colorAccent"
+        app:icon_one="@drawable/ic_home"
+        app:icon_two="@drawable/ic_history"
+        app:icon_three="@drawable/ic_mall"
+        app:icon_four="@drawable/ic_health"
+        app:text_one="主页"
+        app:text_two="记录"
+        app:text_three="商城"
+        app:text_four="健康贴士"
+        />
 
-    <com.datiao.crack.youyou.component.BottomBar
-        android:id="@+id/bottom_bar"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:layout_gravity="bottom"
-        android:background="#FFFFFF" />
-</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

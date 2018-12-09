@@ -16,10 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Login_Activity"></activity>
-        <activity android:name=".activity.MainPage_Activity"></activity>
-        <activity android:name=".activity.RegisterSuccess_Activity"></activity>
-        <activity android:name=".activity.Register_Activity"></activity>
+        <activity android:name=".activity.Login_Activity" />
+        <activity android:name=".activity.MainPage_Activity" />
+        <activity android:name=".activity.RegisterSuccess_Activity" />
+        <activity android:name=".activity.Register_Activity" />
+        <activity android:name=".activity.History_Activity"></activity>
+        <activity android:name=".activity.New_HealthPlan_Activity"></activity>
+        <activity android:name=".activity.Personal_Information_Activity"></activity>
+
     </application>
 
 </manifest>

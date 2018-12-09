@@ -291,6 +291,7 @@ public class BottomBar extends View {
         Fragment fragment = fragmentList.get(whichFragment);
         int frameLayoutId = containerId;
 
+
         if (fragment != null) {
             FragmentTransaction transaction = ((AppCompatActivity)context).getSupportFragmentManager().beginTransaction();
             if (fragment.isAdded()) {
