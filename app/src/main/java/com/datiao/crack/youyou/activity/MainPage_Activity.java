@@ -1,8 +1,10 @@
 package com.datiao.crack.youyou.activity;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
@@ -30,14 +32,13 @@ import java.util.List;
 public class MainPage_Activity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     SpaceTabLayout tabLayout;
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.main_page_layout);
         List<Fragment> fragmentList = new ArrayList<>();
-
-
         Fragment1 fragment1=new Fragment1();
         Fragment2 fragment2=new Fragment2();
         Fragment3 fragment3=new Fragment3();

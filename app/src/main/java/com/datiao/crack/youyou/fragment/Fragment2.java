@@ -1,6 +1,8 @@
 package com.datiao.crack.youyou.fragment;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -54,9 +56,8 @@ public class Fragment2 extends Fragment {
         String[] names = { "阿司匹林", "降压药", "降压药", "阿司匹林","阿司匹林", "降压药", "降压药", "阿司匹林"};
         String[] sum = { "两颗", "两颗", "两颗", "两颗","两颗", "两颗", "两颗", "两颗"};
         String[] time = { "9:00", "9:00", "10:00", "16:00","9:00", "9:00", "10:00", "16:00"};
-
         for(int i=0;i<names.length;i++)
-            toDoItemList.add(new ToDoItem(names[i],sum[i],time[i]));
+            toDoItemList.add(new ToDoItem(names[i],sum[i],time[i],R.drawable.yaoxiang,R.drawable.cha));
         listView.setDividerHeight(50);
         listView.setAdapter(toDoItemAdapter);
         addListener();

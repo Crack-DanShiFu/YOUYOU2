@@ -2,9 +2,6 @@
     android:shape="rectangle" >
 
     <solid android:color="@color/colorLoginBtn" />
-
-
-
     <corners android:radius="25dp" />
 
 

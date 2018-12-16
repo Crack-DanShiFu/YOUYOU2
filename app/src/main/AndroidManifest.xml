@@ -4,7 +4,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:name=".application.Plans_Application"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -23,7 +24,8 @@
         <activity android:name=".activity.History_Activity"></activity>
         <activity android:name=".activity.New_HealthPlan_Activity"></activity>
         <activity android:name=".activity.Personal_Information_Activity"></activity>
-
+        <activity android:name=".activity.Account_select_Activity"></activity>
+        <activity android:name=".activity.New_Healthplan_Info_Activity"></activity>
     </application>
 
 </manifest>

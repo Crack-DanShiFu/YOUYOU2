@@ -34,7 +34,7 @@ public class Login_Activity extends AppCompatActivity {
         getSupportActionBar().hide();
         sharedPreferences= getSharedPreferences("Login",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor =sharedPreferences.edit();
-        editor.putBoolean("isLogin",true);
+        editor.putBoolean("isLogin",false);
         editor.commit();
         setContentView(R.layout.login_layout);
         init();
@@ -50,7 +50,6 @@ public class Login_Activity extends AppCompatActivity {
         createBtn.setOnClickListener(new CreateBtnOnClickListener());
         submitBtn.setOnClickListener(new SubmitBtnOnClickListener());
     }
-
     private class SubmitBtnOnClickListener implements View.OnClickListener {
 
         @Override
@@ -68,7 +67,9 @@ public class Login_Activity extends AppCompatActivity {
                 Logger.d(result);
                 if(result){
                     Toast.makeText(Login_Activity.this, "登陆成功", Toast.LENGTH_SHORT).show();
-
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.putBoolean("isLogin",true);
+                    editor.commit();
                     Intent intent = new Intent(Login_Activity.this,
                             MainPage_Activity.class);
                     startActivity(intent);

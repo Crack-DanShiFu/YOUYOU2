@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/loginoutitem"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="@dimen/more_info_item_margin"
+        android:background="@drawable/moreinfo_item_shape"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="@dimen/more_info_item_size"
+            android:layout_height="@dimen/more_info_item_size"
+            android:src="@drawable/ic_loginout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="@color/fontgray"
+            android:textSize="@dimen/more_info_item_font_size"
+            android:text="退出账户"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical|right">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_return_gray"
+                android:rotation="180"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

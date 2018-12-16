@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@color/spaceTabblue"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_return"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新的健康计划"
+                android:textColor="@color/colorFontWhite"
+
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/new_plan_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/user"
+            android:hint="计划名称"
+            android:inputType="textEmailAddress"
+            android:maxLength="15"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/new_plan_queren_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="确定"
+            android:layout_below="@+id/repasswdText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorFontWhite"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+</LinearLayout>

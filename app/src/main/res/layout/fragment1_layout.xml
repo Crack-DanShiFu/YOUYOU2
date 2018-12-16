@@ -34,7 +34,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="620dp"
 
         android:layout_alignParentBottom="true"
         android:background="@drawable/shape_small_label">
